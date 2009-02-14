@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>package $PACKAGE_PREFIX${1:namespace} {
+	/**
+	 * ${TM_FILENAME/^([a-z]+)\..+$/$1/i}
+	 * ${4:description}
+	 *
+	 * @author ${5:$TM_MY_NAME} &lt;${6:$TM_MY_EMAIL}&gt;
+	 * @version ${7:version}
+	 */
+	${2:public} class ${TM_FILENAME/^([a-z]+)\..+$/$1/i} implements ${3:interface} {
+		/**
+		 * ${TM_FILENAME/^([a-z]+)\..+$/$1/i}
+		 */
+		public function ${TM_FILENAME/^([a-z]+)\..+$/$1/i}() {
+			$0
+		}
+	}
+}</string>
+	<key>name</key>
+	<string>new class implements</string>
+	<key>scope</key>
+	<string>source.actionscript3</string>
+	<key>tabTrigger</key>
+	<string>newci</string>
+	<key>uuid</key>
+	<string>72570536-4EB1-4A3F-9596-11BC40540403</string>
+</dict>
+</plist>

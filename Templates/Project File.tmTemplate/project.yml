@@ -1,0 +1,13 @@
+# Project template.  More comments to come...
+document-class: App
+flex-sdk-bin: 
+
+# Commands sent to the compiler
+# For information type: 
+#   mxmlc -help list
+#   mxmlc -help advnaced
+compile-options:
+  default-frame-rate: 30
+  default-size:
+    - 640
+    - 480

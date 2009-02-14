@@ -1,0 +1,143 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+	<title>Batman</title>
+	
+	<script src="_javascripts/jquery.js" type="text/javascript" charset="utf-8"></script>
+	<script src="_javascripts/swfobject.js" type="text/javascript" charset="utf-8"></script>
+	<script src="_javascripts/debug.js" type="text/javascript" charset="utf-8"></script>
+
+  <style type="text/css" media="screen">
+    body {
+      font: 10px "Lucida Grande";
+      margin: 4px auto 0 auto;
+      padding: 0;
+    }
+
+    #player_container {
+      z-index: 1;
+    }
+
+    #trace_container {
+      z-index: 2;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: white;
+    }
+    
+    #trace_header {
+      background-color: black;
+      -webkit-box-shadow: rgba(20, 20, 20, 0.6) 0 1px 6px;;
+    }
+
+    .caption, .button {
+      padding: 6px 10px;
+      float: left;
+      font-weight: bold;
+      font-size: 12pt;
+      text-shadow: rgba(200, 200, 200, 0.3) 0 1px 2px;
+      color: #fff;
+    }
+
+    .button {
+      color: #aaa;
+    }
+
+    .button:hover {
+      text-decoration: underline;
+      color: #fff;
+      cursor: default;
+    }
+
+    .warning {
+      color: #990000;
+      font-size: 9pt;
+      float: right;
+    }
+
+    #trace {
+      font: 10px Monaco;
+      margin: 0;
+      padding: 10px;
+      max-height: 240px;
+      overflow: auto;
+
+      color: black;
+    }
+/*
+    #watch_container {
+      z-index: 3;
+      position: fixed;
+      bottom: 0;
+      top: 0;
+      right: 0;
+      background-color: white;
+    }
+
+    #watch_caption {
+      display: inline-block;
+      -webkit-transform: rotate(90deg);
+    }
+
+    #watch {
+      font: 10px Monaco;
+      margin: 5px;
+      padding: 5px;
+      max-height: 200px;
+      overflow: auto;
+
+      color: black;
+    }
+*/
+    .test {
+      display: inline-block;
+      border: thin dashed red;
+    }
+    
+    em {
+      font-weight: bold;
+      font-style: normal;
+    }
+  </style>
+
+  <script type="text/javascript" charset="utf-8">
+    $(document).ready(function(event) {
+      $("#trace_header").click(function() {$("#trace").slideToggle("fast");$("#player").focus();});
+      $("#trace_clear").click(function(e) {$("#trace").empty();$("#player").focus();e.stopPropagation();});
+      $.getScript("/_scripts");
+    });
+
+  </script>
+
+</head>
+
+<body>
+<div id="player_container"><div id="player">?</div></div>
+<div>
+  <span class="warning">click inside the red box to give flash focus</span>
+</div>
+
+<div id="trace_container">
+  <div id="trace_header">
+    <div id="trace_caption" class="caption">-Trace-</div>
+    <div id="trace_clear" class="button">clear</div>
+    <div style="clear:both"></div>
+  </div>
+  <div id="trace"></div>
+</div>
+
+<!--
+<div id="watch_container">
+  <div id="watch_caption" class="caption">Watch</div>
+  <div id="watch">?</div>
+</div>
+-->
+
+</body>
+</html>

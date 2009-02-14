@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>saveModifiedFiles</string>
+	<key>command</key>
+	<string>export TM_RUBY=$(which "${TM_RUBY:-ruby}")
+
+"${TM_RUBY}" -- "$TM_BUNDLE_SUPPORT/bin/run.rb"
+</string>
+	<key>input</key>
+	<string>none</string>
+	<key>keyEquivalent</key>
+	<string>@r</string>
+	<key>name</key>
+	<string>Run Flash</string>
+	<key>output</key>
+	<string>discard</string>
+	<key>scope</key>
+	<string>source.actionscript3</string>
+	<key>uuid</key>
+	<string>7BA183BD-13D5-4CC7-B0CD-3276E369FCCE</string>
+</dict>
+</plist>

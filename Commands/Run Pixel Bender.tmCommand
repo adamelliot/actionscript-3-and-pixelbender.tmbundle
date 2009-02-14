@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>saveModifiedFiles</string>
+	<key>command</key>
+	<string>open "${TM_FILEPATH}"
+</string>
+	<key>input</key>
+	<string>none</string>
+	<key>keyEquivalent</key>
+	<string>@r</string>
+	<key>name</key>
+	<string>Run Pixel Bender</string>
+	<key>output</key>
+	<string>discard</string>
+	<key>scope</key>
+	<string>source.pixelbender</string>
+	<key>uuid</key>
+	<string>CC9AC1BE-C027-461C-91B6-79D672139F96</string>
+</dict>
+</plist>

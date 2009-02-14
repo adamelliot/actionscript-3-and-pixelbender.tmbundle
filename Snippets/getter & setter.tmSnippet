@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>/**
+ * ${3:description}
+ */
+public function get ${1:propertyName}():${2:*} { return _${1}; }
+
+/**
+ * @private
+ */
+public function set ${1}(value:${2}):void { _${1} = value;$0 }</string>
+	<key>name</key>
+	<string>getter &amp; setter</string>
+	<key>scope</key>
+	<string>source.actionscript3</string>
+	<key>tabTrigger</key>
+	<string>gs</string>
+	<key>uuid</key>
+	<string>2C6A1C6D-D0B6-4270-9D9C-58FA1ADB06E5</string>
+</dict>
+</plist>

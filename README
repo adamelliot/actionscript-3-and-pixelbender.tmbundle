@@ -1,0 +1,41 @@
+You'll want to disable the current ActionScript bundles as this one doesn't
+play super well with them.
+
+To get the bundle properly working you'll need to have downloaded the flex
+SDK. It should work with either version 3 or 4. You'll need to have them on
+your path as flex. Keep in mind that version 3 will compile files for Flash 9 and version 4 will compile for Flash 10.
+
+http://opensource.adobe.com/wiki/display/flexsdk/Flex+SDK
+
+For example I have a ~/bin folder in my home folder on my path. Inside I have
+the flex sdk downloaded as flex: ~/bin/flex/
+
+For the debugger to properly log to the window you'll need to have the debug
+player (for the browser):
+
+http://www.adobe.com/support/flashplayer/downloads.html
+
+The current version works fairly well. It shows traces and the like in the
+player window, but it can be flakey at times. Let me know if you have any
+issues and I can try to work them out.
+
+To setup a project create a file called project.yml in the base directory of
+of your project.
+
+The only thing you really need in here is this line:
+application-class: App
+
+Where App is the name of your base class for your project.
+
+To specify command line options to mxmlc use the compile-options parameter EG:
+compile-options:
+  output: something_cool.swf
+  
+The compiler will respect your inline AS directive like:
+[SWF(...)], etc
+
+To run Pixel Bender files you'll need to download the Pixel Bender toolkit. When you run the file it will open in Pixel Bender.
+
+http://labs.adobe.com/downloads/pixelbender.html
+
+Adam Elliot - <adam@warpube.com>

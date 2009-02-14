@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>name</key>
+	<string>ActionScript 3 &amp; Pixel Bender</string>
+	<key>ordering</key>
+	<array>
+		<string>E64E31A1-F7F7-4399-B7AB-6576C4F443A7</string>
+		<string>F93009F7-BCEC-4D3E-91ED-EF7CDAC7D279</string>
+		<string>85D37051-4F25-4621-AE8A-FF3FC7B2BEDB</string>
+		<string>2C6A1C6D-D0B6-4270-9D9C-58FA1ADB06E5</string>
+		<string>B635A520-EA96-447B-83BC-62A60B2C9992</string>
+		<string>6BADAB6D-FE77-4517-A98E-04C35FE5F6B1</string>
+		<string>72570536-4EB1-4A3F-9596-11BC40540403</string>
+		<string>B8B5152A-35DD-4708-A978-0E62BF9C92ED</string>
+		<string>6F2B1393-4B7C-4AA9-AF4E-35F7FB266390</string>
+		<string>3F6AC6B9-7EF3-4343-ACD2-CC15CA651FD3</string>
+		<string>56E8740D-DDA7-4FE3-BF21-2678DE7FC021</string>
+		<string>B644245A-E884-43B0-AB32-C96940083149</string>
+		<string>28C3A25A-9B78-451B-B56E-04C17DAB1254</string>
+		<string>C4C53A90-59A4-4DFC-A86F-A3F8D352917B</string>
+		<string>7BA183BD-13D5-4CC7-B0CD-3276E369FCCE</string>
+		<string>CC9AC1BE-C027-461C-91B6-79D672139F96</string>
+		<string>EC6206D9-FE42-41DB-B487-EA83E773F11D</string>
+		<string>05F136F7-EC7E-4EF7-8FC4-32C5762BB098</string>
+		<string>90BDE432-708A-4274-A7A0-13C7B0B57B08</string>
+		<string>0212DB7D-5405-43F6-A2D3-20DB4485CDA1</string>
+		<string>71BC899C-2333-4430-AC73-9C9E45C3511F</string>
+		<string>36F07227-5FF4-4C61-B35C-A0471C86675D</string>
+		<string>54EFFC66-C52F-43D3-8564-3AC66A5E067B</string>
+		<string>8E250392-1FE7-41A8-B8E2-37D2ACAE5E95</string>
+		<string>8B98F82C-AB2C-413C-BC7D-A3A72288AD70</string>
+		<string>4DC3DBC2-21A0-4FB1-9593-C1E46C883253</string>
+		<string>C81BC5D2-9500-43E7-8194-B5DB6A5EFD7E</string>
+		<string>B87E4C8F-F3CD-4F97-B456-5F0AB8E2FB66</string>
+		<string>281C5F75-71ED-428F-9EB4-66818E63232F</string>
+		<string>74E20FDE-9714-4F31-8D93-564484FD72D4</string>
+	</array>
+	<key>uuid</key>
+	<string>ED73D290-9361-439B-B443-F184F4896F2E</string>
+</dict>
+</plist>

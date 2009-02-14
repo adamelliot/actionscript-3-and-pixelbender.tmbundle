@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>package $PACKAGE_PREFIX${1:namespace} {
+	/**
+	 * ${TM_FILENAME/^([a-z]+)\..+$/$1/i}
+	 * ${3:description}
+	 *
+	 * @author ${4:$TM_MY_NAME} &lt;${5:$TM_MY_EMAIL}&gt;
+	 * @version ${6:version}
+	 */
+	public class ${TM_FILENAME/^([a-z]+)\..+$/$1/i} {
+		private static var _instance:${TM_FILENAME/^([a-z]+)\..+$/$1/i};
+		
+		public function ${TM_FILENAME/^([a-z]+)\..+$/$1/i}(singleton_enforcer:${TM_FILENAME/^([a-z]+)\..+$/$1/i}SingletonEnforcer) {}
+		
+		public static function instance():${TM_FILENAME/^([a-z]+)\..+$/$1/i} {
+			if (_instance == null)
+				_instance = new ${TM_FILENAME/^([a-z]+)\..+$/$1/i}(new ${TM_FILENAME/^([a-z]+)\..+$/$1/i}SingletonEnforcer());
+			
+			return _instance;
+		}$0
+	}
+}
+internal class ${TM_FILENAME/^([a-z]+)\..+$/$1/i}SingletonEnforcer {}</string>
+	<key>name</key>
+	<string>new singleton class</string>
+	<key>scope</key>
+	<string>source.actionscript3</string>
+	<key>tabTrigger</key>
+	<string>newsingleton</string>
+	<key>uuid</key>
+	<string>3F6AC6B9-7EF3-4343-ACD2-CC15CA651FD3</string>
+</dict>
+</plist>
